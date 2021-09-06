@@ -1,0 +1,44 @@
+.infobox{
+    flex: 1;
+   cursor: pointer;
+}
+.infobox:not(:last-child){
+    margin-right: 15px; 
+}
+/* .infobox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.infobox_cases{
+    color: #cc1034;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.infobox_total{
+    color: #6c757d;
+    font-weight: 600 !important;
+    font-size: 0.8rem !important;
+    margin-top: 15px !important;
+}
+.infobox-selected{
+    border-top: 10px solid greenyellow;
+}
+.infobox-red{
+    border-color: red;
+}
+.infobox-green{
+    color: rgb(150, 248, 2) !important;
+}
+
+@media(max-width:399px){
+   
+    .infobox_cases{
+        font-size: 15px;
+    }
+    .infobox_total{
+        font-size: 12px !important;
+    }
+}
